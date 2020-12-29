@@ -1,0 +1,14 @@
+
+// ███ WebEngine - Design System Framework
+// ■■■ System > Clearfix
+
+// ___ About This File _________________________________________________________
+// This file creates a prefix used to clear the floats in a container
+
+// [ SIMPLE CLEARFIX ]==========================================================
+
+@mixin clearfix {
+	content: "";
+	display: block;
+	clear: both;
+}
