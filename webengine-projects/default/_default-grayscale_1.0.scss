@@ -1,0 +1,106 @@
+
+// ███ WebEngine - Design System Framework
+// ■■■ Default Grayscale
+
+// [ DOCUMENTATION ]============================================================
+// SCSS Variable | color: $gray1
+// CSS Class | gray1 [color], offwhite3-bg [background], gray3-border [border]
+
+// [ GRAYSCALE VARIABLES ]======================================================
+
+// ___ Black and White ___
+$white                : white;
+$black                : black;
+
+// ___ Offwhite ___
+$offwhite1            : #fcfcfc;  // Black 1%
+$offwhite2            : #fafafa;  // Black 2%
+$offwhite3            : #f7f7f7;  // Black 3%
+$offwhite4            : #f5f5f5;  // Black 4%  ◄ $offwhite
+$offwhite5            : #f0f0f0;  // Black 5%
+$offwhite6            : #ededed;  // Black 6%
+$offwhite7            : #ebebeb;  // Black 7%
+$offwhite8            : #e8e8e8;  // Black 8%
+
+
+// ___ Long Grayscale ___
+$gray1                : #e5e5e5;  // Black 10%
+$gray2                : #d9d9d9;  // Black 15%
+$gray3                : #cccccc;  // Black 20%  ◄ $gray-lighter
+$gray4                : #bfbfbf;  // Black 25%
+$gray5                : #b3b3b3;  // Black 30%
+$gray6                : #a6a6a6;  // Black 35%  ◄ $gray-light
+$gray7                : #999999;  // Black 40%
+$gray8                : #8c8c8c;  // Black 45%
+$gray9                : #808080;  // Black 50%  ◄ $gray
+$gray10               : #737373;  // Black 55%
+$gray11               : #666666;  // Black 60%
+$gray12               : #595959;  // Black 65%  ◄ $gray-dark
+$gray13               : #4d4d4d;  // Black 70%
+$gray14               : #404040;  // Black 75%
+$gray15               : #333333;  // Black 80%  ◄ $gray-darker
+$gray16               : #262626;  // Black 85%
+$gray17               : #1a1a1a;  // Black 90%
+$gray18               : #0f0f0f;  // Black 95%
+$gray19               : #0f0f0f;  // Black 96%
+$gray20               : #080808;  // Black 98%
+
+// ___ Short Grayscale ___
+$offwhite             : $offwhite4;
+$gray-lighter         : $gray3;
+$gray-light           : $gray6;
+$gray                 : $gray9;
+$gray-dark            : $gray12;
+$gray-darker          : $gray15;
+
+// [ GRAYSCALE CLASS GENERATOR ]================================================
+
+$grayscale-map: (
+// Black and White
+"white"               : $white,
+"black"               : $black,
+// Offwhite
+"offwhite1"           : $offwhite1,
+"offwhite2"           : $offwhite2,
+"offwhite3"           : $offwhite3,
+"offwhite4"           : $offwhite4,
+"offwhite5"           : $offwhite5,
+"offwhite6"           : $offwhite6,
+"offwhite7"           : $offwhite7,
+"offwhite8"           : $offwhite8,
+// Long Grayscale
+"gray1"               : $gray1,
+"gray2"               : $gray2,
+"gray3"               : $gray3,
+"gray4"               : $gray4,
+"gray5"               : $gray5,
+"gray6"               : $gray6,
+"gray7"               : $gray7,
+"gray8"               : $gray8,
+"gray9"               : $gray9,
+"gray10"              : $gray10,
+"gray11"              : $gray11,
+"gray12"              : $gray12,
+"gray13"              : $gray13,
+"gray14"              : $gray14,
+"gray15"              : $gray15,
+"gray16"              : $gray16,
+"gray17"              : $gray17,
+"gray18"              : $gray18,
+"gray19"              : $gray19,
+"gray20"              : $gray20,
+// Short Grayscale
+"offwhite"            : $offwhite4,
+"gray-lighter"        : $gray-lighter,
+"gray-light"          : $gray-light,
+"gray"                : $gray,
+"gray-dark"           : $gray-dark,
+"gray-darker"         : $gray-darker
+);
+
+@each $name, $color in $grayscale-map {
+    .#{$prefix}#{$name} { color: #{$color}; }
+    .#{$prefix}#{$name}-bg { background-color: #{$color}; }
+    .#{$prefix}#{$name}-border { border-color: #{$color}; }
+  }
+
