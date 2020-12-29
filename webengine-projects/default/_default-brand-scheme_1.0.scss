@@ -1,0 +1,60 @@
+
+// ███ WebEngine - Design System Framework
+// ■■■ Default Brand Color Scheme
+
+// [ DOCUMENTATION ]============================================================
+// SCSS Variable | color: $primary
+// CSS Class | secondary [color], success-bg [background], accent4-border [border]
+
+// [ BRAND SCHEME VARIABLES ]===================================================
+
+$primary          : $brand-orange;
+$secondary        : $brand-blue;
+$tertiary         : $brand-lightblue;
+$accent1          : $brand-darkorange;
+$accent2          : $brand-lightorange;
+$accent3          : $brand-darkblue;
+$accent4          : $brand-lightblue;
+$success          : $brand-green;
+$success-light    : $brand-green;
+$success-dark     : $brand-green;
+$warning          : $brand-yellow;
+$warning-light    : $brand-yellow;
+$warning-dark     : $brand-yellow;
+$error            : $brand-red;
+$error-light      : $brand-red;
+$error-dark       : $brand-red;
+$disabled         : $brand-gray;
+$disabled-light   : $brand-gray;
+$disabled-dark    : $brand-gray;
+
+// [ SCHEME CLASS GENERATOR ]===================================================
+
+$scheme-map: (
+"primary"         : $primary,
+"secondary"       : $secondary,
+"tertiary"        : $tertiary,
+"accent1"         : $accent1,
+"accent2"         : $accent2,
+"accent3"         : $accent3,
+"accent4"         : $accent4,
+"success"         : $success,
+"success-light"   : $success-light,
+"success-dark"    : $success-dark,
+"warning"         : $warning,
+"warning-light"   : $warning-light,
+"warning-dark"    : $warning-dark,
+"error"           : $error,
+"error-light"     : $error-light,
+"error-dark"      : $error-dark,
+"disabled"        : $disabled,
+"disabled-light"  : $disabled-light,
+"disabled-dark"   : $disabled-dark
+);
+
+@each $name, $color in $scheme-map {
+    .#{$prefix}#{$name} { color: #{$color}; }
+    .#{$prefix}#{$name}-bg { background-color: #{$color}; }
+    .#{$prefix}#{$name}-border { border-color: #{$color}; }
+  }
+
