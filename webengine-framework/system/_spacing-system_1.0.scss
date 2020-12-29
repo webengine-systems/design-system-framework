@@ -1,0 +1,28 @@
+
+// ███ WebEngine - Design System Framework
+// ■■■ System > Unified Spacing System
+
+// ___ About This File _________________________________________________________
+
+// [ VARIABLES AND REFERENCES ]=================================================
+// Percentage values are Base16 like r/em values.
+// "$-" is px | "$--" is em | "$---" is rem | "$p-" is percentage
+
+$-micro1: 1px;   // no suitable r/em value
+$-micro2: 2px;   // no suitable r/em value
+$-micro3: 3px;   // no suitable r/em value
+// ▼ PX          ▼ EM             ▼ REM              ▼ %
+$-xxxs: 4px;     $--xxxs: 0.25em; $---xxxs: 0.25rem; $p-xxxs: 0.25%; 
+$-xxs: 8px;      $--xxs: 0.5em;   $---xxs: 0.5rem;   $p-xxs: 0.5%;   
+$-xs: 12px;      $--xs: 0.75em;   $---xs: 0.75rem;   $p-xs: 0.75%;   
+$-sm: 16px;      $--sm: 1em;      $---sm: 1em;       $p-sm: 1%;  // ◄ base   
+$-md: 24px;      $--md: 1.5em;    $---md: 1.5rem;    $p-md: 1.5%;    
+$-lg: 32px;      $--lg: 2em;      $---lg: 2rem;      $p-lg: 2%;      
+$-xl: 40px;      $--xl: 2.5em;    $---xl: 2.5rem;    $p-xl: 2.5%;    
+$-xxl: 48px;     $--xxl: 3em;     $---xxl: 3rem;     $p-xxl: 3%;     
+$-xxxl: 64px;    $--xxxl: 4em;    $---xxxl: 4rem;    $p-xxxl: 4%;    
+$-jumbo1: 96px;  $--jumbo1: 6em;  $---jumbo1: 6rem;  $p-jumbo1: 6%;  
+$-jumbo2: 128px; $--jumbo2: 8em;  $---jumbo2: 8rem;  $p-jumbo2: 8%;  
+$-jumbo3: 160px; $--jumbo3: 10em; $---jumbo3: 10rem; $p-jumbo3: 10%; 
+
+
