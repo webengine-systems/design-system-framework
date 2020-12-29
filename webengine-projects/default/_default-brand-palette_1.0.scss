@@ -3,52 +3,52 @@
 // ■■■ Default Brand Palette
 
 // [ DOCUMENTATION ]============================================================
-// SCSS Variable | color: $gray1
-// CSS Class | gray1 [color], gray2-bg [background], gray3-border [border]
+// SCSS Variable | color: $brand_yellow
+// CSS Class | brand-green [color], brand-darkorange-bg [background], brand-lightyellow-border [border]
 
 // [ BRAND COLOR VARIABLES ]====================================================
 
 // Yellow
-$brand_yellow         : yellow;
-$brand_lightyellow    : yellow;
-$brand_darkyellow     : yellow;
+$brand-yellow         : yellow;
+$brand-lightyellow    : yellow;
+$brand-darkyellow     : yellow;
 // Green
-$brand_green          : green;
-$brand_lightgreen     : green;
-$brand_darkgreen      : green;
+$brand-green          : green;
+$brand-lightgreen     : green;
+$brand-darkgreen      : green;
 // Blue
-$brand_blue           : #276BAB;
-$brand_lightblue      : #276BAB;
-$brand_darkblue       : #276BAB;
+$brand-blue           : #276BAB;
+$brand-lightblue      : #276BAB;
+$brand-darkblue       : #276BAB;
 // Purple
-$brand_purple         : purple;
-$brand_lightpurple    : purple;
-$brand_darkpurple     : purple;
+$brand-purple         : purple;
+$brand-lightpurple    : purple;
+$brand-darkpurple     : purple;
 // Red
-$brand_red            : #a50000;
-$brand_lightred       : #a50000;
-$brand_pink           : pink;
-$brand_darkred        : #a50000;
+$brand-red            : #a50000;
+$brand-lightred       : #a50000;
+$brand-pink           : pink;
+$brand-darkred        : #a50000;
 // Orange
-$brand_orange         : #ff8800;
-$brand_lightorange    : #ff8800;
-$brand_darkorange     : #ff8800;
+$brand-orange         : #ff8800;
+$brand-lightorange    : #ff8800;
+$brand-darkorange     : #ff8800;
 // Brown
-$brand_brown          : brown;
-$brand_lightbrown     : brown;
-$brand_darkbrown      : brown;
+$brand-brown          : brown;
+$brand-lightbrown     : brown;
+$brand-darkbrown      : brown;
 // Black
-$brand_black          : black;
-$brand_lightblack     : black;
-$brand_darkblack      : black;
+$brand-black          : black;
+$brand-lightblack     : black;
+$brand-darkblack      : black;
 // Gray
-$brand_gray           : gray;
-$brand_lightgray      : gray;
-$brand_darkgray       : gray;
+$brand-gray           : gray;
+$brand-lightgray      : gray;
+$brand-darkgray       : gray;
 // White
-$brand_white          : white;
-$brand_lightwhite     : white;
-$brand_darkwhite      : white;
+$brand-white          : white;
+$brand-lightwhite     : white;
+$brand-darkwhite      : white;
 
 // [ BRAND CLASS GENERATOR ]====================================================
 
