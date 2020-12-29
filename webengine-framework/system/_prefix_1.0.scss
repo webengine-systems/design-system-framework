@@ -1,0 +1,15 @@
+
+// ███ WebEngine - Design System Framework
+// ■■■ System > Global Class Prefix
+
+// ___ About This File _________________________________________________________
+// This file is used to add a WebEngine prefix to all classes to help differentiate our styles from an existing framework.
+
+$prefix: "";
+
+@if $primary-framework == true {
+    $prefix: "";
+} @else {
+    $prefix: "we-"; // Set to "we-" or "webengine-" or something custom
+}
+
