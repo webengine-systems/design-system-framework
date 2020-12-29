@@ -1,0 +1,101 @@
+
+// ███ WebEngine - Design System Framework
+// ■■■ Default Brand Palette
+
+// [ DOCUMENTATION ]============================================================
+// SCSS Variable | color: $gray1
+// CSS Class | gray1 [color], gray2-bg [background], gray3-border [border]
+
+// [ BRAND COLOR VARIABLES ]====================================================
+
+// Yellow
+$brand_yellow         : yellow;
+$brand_lightyellow    : yellow;
+$brand_darkyellow     : yellow;
+// Green
+$brand_green          : green;
+$brand_lightgreen     : green;
+$brand_darkgreen      : green;
+// Blue
+$brand_blue           : #276BAB;
+$brand_lightblue      : #276BAB;
+$brand_darkblue       : #276BAB;
+// Purple
+$brand_purple         : purple;
+$brand_lightpurple    : purple;
+$brand_darkpurple     : purple;
+// Red
+$brand_red            : #a50000;
+$brand_lightred       : #a50000;
+$brand_darkred        : #a50000;
+// Orange
+$brand_orange         : #ff8800;
+$brand_lightorange    : #ff8800;
+$brand_darkorange     : #ff8800;
+// Brown
+$brand_brown          : brown;
+$brand_lightbrown     : brown;
+$brand_darkbrown      : brown;
+// Black
+$brand_black          : black;
+$brand_lightblack     : black;
+$brand_darkblack      : black;
+// Gray
+$brand_gray           : gray;
+$brand_lightgray      : gray;
+$brand_darkgray       : gray;
+// White
+$brand_white          : white;
+$brand_lightwhite     : white;
+$brand_darkwhite      : white;
+
+// [ BRAND CLASS GENERATOR ]====================================================
+
+$brand-map: (
+  // Yellow
+  "brand-yellow"      : $brand-yellow,
+  "brand-lightyellow" : $brand-lightyellow,
+  "brand-darkyellow"  : $brand-darkyellow,
+  // Green
+  "brand-green"       : $brand-green,
+  "brand-lightgreen"  : $brand-lightgreen,
+  "brand-darkgreen"   : $brand-darkgreen,
+  // Blue
+  "brand-blue"        : $brand-blue,
+  "brand-lightblue"   : $brand-lightblue,
+  "brand-darkblue"    : $brand-darkblue,
+  // purple
+  "brand-purple"      : $brand-purple,
+  "brand-lightpurple" : $brand-lightpurple,
+  "brand-darkpurple"  : $brand-darkpurple,
+  // Red
+  "brand-red"         : $brand-red,
+  "brand-lightred"    : $brand-lightred,
+  "brand-darkred"     : $brand-darkred,
+  // Orange
+  "brand-orange"      : $brand-orange,
+  "brand-lightorange" : $brand-lightorange,
+  "brand-darkorange"  : $brand-darkorange,
+  // Brown
+  "brand-brown"       : $brand-brown,
+  "brand-lightbrown"  : $brand-lightbrown,
+  "brand-darkbrown"   : $brand-darkbrown,
+  // Black
+  "brand-black"       : $brand-black,
+  "brand-lightblack"  : $brand-lightblack,
+  "brand-darkblack"   : $brand-darkblack,
+  // Gray
+  "brand-gray"        : $brand-gray,
+  "brand-lightgray"   : $brand-lightgray,
+  "brand-darkgray"    : $brand-darkgray,
+  // White
+  "brand-white"       : $brand-white,
+  "brand-lightwhite"  : $brand-lightwhite,
+  "brand-darkwhite"   : $brand-darkwhite
+);
+
+@each $name, $color in $brand-map {
+  .#{$prefix}#{$name} { color: #{$color}; }
+  .#{$prefix}#{$name}-bg { background-color: #{$color}; }
+  .#{$prefix}#{$name}-border { border-color: #{$color}; }
+}
