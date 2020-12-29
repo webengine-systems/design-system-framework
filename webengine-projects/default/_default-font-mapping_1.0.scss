@@ -1,0 +1,102 @@
+
+// ███ WebEngine - Design System Framework
+// ■■■ Font Mapping
+
+// ___ About This File _________________________________________________________
+// Use this file to define which fonts are used for groups of HTML elements
+
+// ### Next Steps ###
+// #1 - Import Fonts
+// #2 - Create Mixins
+// #3 - Map to HTML Elements
+
+
+// [ STEP #1 - IMPORT FONTS ]===================================================
+
+
+// ___ Import Local Font Example ___
+
+// @font-face {
+//   font-family: "font-name";
+//   src: url("myFont.ttf");
+// }
+
+// Example: Google Fonts Import
+// @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800');
+
+// ___ Serif Imports ___
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+// ___ Sans Serif Imports ___
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+// ___ Monospace Imports ___
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+
+// [ STEP #2 - CREATE MIXINS ]==================================================
+
+
+// ___ Default Font Family Mixins ___
+// These define the default fonts. We recommend leaving these as is.
+
+@mixin sans_default   { font-family: Helvetica, Arial, sans-serif; }
+@mixin serif_default  { font-family: Times, serif; }
+@mixin mono_default   { font-family: Courier, monospace; }
+
+// ___ Serif Font Mixins ___
+// Example: @mixin serif_droid  { font-family: 'Droid Serif', serif; }
+// Add yours here!
+
+@mixin serif_noto  { font-family: 'Noto Serif', serif; }
+
+// ___Sans Serif Font Mixins ___
+// Example: @mixin sanserif_opensans  { font-family: 'Open Sans', sans-serif; }
+// Add yours here!
+
+@mixin sans_noto  { font-family: 'Noto Sans JP', sans-serif; }
+
+// ___Monospace Font Mixins ___
+// Example: @mixin mono_inconsolata  { font-family: 'Inconsolata', monospace; }
+// Add yours here!
+
+@mixin mono_inconsolata  { font-family: 'Inconsolata', monospace; }
+
+
+// [ STEP #3 - MAP TO ELEMENTS ]================================================
+
+
+// ___ Heading Elements ___
+
+h1,h2,h3,h4,h5,h6 {
+    // Usage: { @include serif_default; }
+    @include serif_noto;
+}
+
+// ___ Content Elements ___
+
+html, body, // Document Containers
+header, footer, nav, section, aside, main, article,  // Content Containers
+a, blockquote,  // Content Elements
+ul, ol, li, dl, dt, dd,  // Lists
+caption, col, colgroup, table, tbody, td, tfoot, th, thead, tr, // Tables
+form, button, label // Forms
+{
+    // Usage: { @include sans_default; }
+    @include sans_noto; 
+}
+
+// ___ Code Elements ___
+
+code, pre, kbd, samp, var {
+    // Usage: { @include mono_default; }
+    @include mono_inconsolata; 
+}
+
+
+// ___ Font-Inherited Elements ___
+
+span, div, fieldset, p
+{
+    font-family: inherit;
+}
