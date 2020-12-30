@@ -1,0 +1,47 @@
+
+// ███ WebEngine - Design System Framework
+// ■■■ System > Breakpoints
+
+// [ Breakpoint Queries ]=======================================================
+
+// NOTE: We recommend a 12 division grid system since it's divisible 
+// by 4 factors: 2(sixths), 3(quarters), 4(thirds), and 6(half).   
+// Other divisions have not been tested yet.
+
+$g_grid: 12;
+
+$breakpoint-xxs:  " screen and (min-width: 0px)";
+$breakpoint-xs:   " screen and (min-width: 0px)";
+$breakpoint-sm:   " screen and (min-width: 480px)";
+$breakpoint-md:   " screen and (min-width: 720px)";
+$breakpoint-lg:   " screen and (min-width: 960px)";
+$breakpoint-xl:   " screen and (min-width: 1200px)";
+$breakpoint-xxl:  " screen and (min-width: 1600px)";
+$breakpoint-xxxl: " screen and (min-width: 2000px)";
+
+// **Bootstrap Breakpoint Reference**
+// **Small** ≥576px
+// **Medium** ≥768px
+// **Large** ≥992px
+// **Extra large** ≥1200px
+
+$xxs: null;
+$xs: null;
+$sm: null;
+$md: null;
+$lg: null;
+$xl: null;
+$xxl: null;
+$aaa: null;
+$type: null;
+
+$g_breakpoint-list: (
+  "xxs": $xxs,
+  "xs":  $xs,
+  "sm":  $sm,
+  "md":  $md,
+  "lg":  $lg,
+  "xl":  $xl,
+  "xxl": $xxl
+);
+
